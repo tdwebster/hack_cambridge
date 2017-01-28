@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "902817130326",
+    "firebase_url": "https://inoculus-62447.firebaseio.com",
+    "project_id": "inoculus-62447",
+    "storage_bucket": "inoculus-62447.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902817130326:android:6323d81d497c20e2",
+        "android_client_info": {
+          "package_name": "com.gmail.senokt16.inoculus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902817130326-9klrmt5je6hrhtrnvgtd64halu9eg57h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmail.senokt16.inoculus",
+            "certificate_hash": "E0B62F9D5286ED0868B875BCC6479807A94DE09D"
+          }
+        },
+        {
+          "client_id": "902817130326-k082v1l4cuc4a23jgo1heihdnut8d84f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902817130326-k082v1l4cuc4a23jgo1heihdnut8d84f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

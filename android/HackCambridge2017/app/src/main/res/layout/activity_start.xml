@@ -37,4 +37,12 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/white"
+        android:text="Websocket console:"
+        android:layout_gravity="bottom"/>
+
 </FrameLayout>

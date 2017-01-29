@@ -6,16 +6,14 @@
     android:background="#0099cc"
     tools:context="com.gmail.senokt16.inoculus.BuilderActivity">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
-    <TextView
-        android:id="@+id/code"
+    <EditText
+        android:id="@+id/code_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|top"
         android:layout_margin="16dp"
-        android:gravity="center"
+        android:transitionName="code"
+        android:textAlignment="center"
         android:keepScreenOn="true"
         android:enabled="false"
         android:text="000000"
@@ -31,8 +29,13 @@
 
     </FrameLayout>
 
+    <com.gmail.senokt16.inoculus.GameGridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <com.gmail.senokt16.inoculus.ZoomableLayout
         android:id="@+id/grid_container"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <android.support.v7.widget.RecyclerView

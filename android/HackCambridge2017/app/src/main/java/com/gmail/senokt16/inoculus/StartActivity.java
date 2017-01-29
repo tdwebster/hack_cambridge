@@ -2,6 +2,7 @@ package com.gmail.senokt16.inoculus;
 
 import android.content.Intent;
 import android.os.Build;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -74,8 +75,10 @@ public class StartActivity extends AppCompatActivity {
                                 setLoading(false);
                                 Intent i = new Intent(StartActivity.this, BuilderActivity.class);
                                 i.putExtra("code", text);
+                                ActivityOptionsCompat options = ActivityOptionsCompat.
+                                        makeSceneTransitionAnimation(StartActivity.this, codeText, "code");
                                 //TODO: Do transition animation for the code.
-                                startActivity(i);
+                                startActivity(i, options.toBundle());
                             } else {
                                 setLoading(false);
                                 setMessageAndClear("TRY AGAIN");

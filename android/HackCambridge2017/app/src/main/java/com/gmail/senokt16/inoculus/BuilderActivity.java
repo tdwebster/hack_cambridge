@@ -48,15 +48,16 @@ public class BuilderActivity extends AppCompatActivity {
 
         ref = FirebaseDatabase.getInstance().getReference("/map/").child(code);
 
-        codeText = (EditText) findViewById(R.id.code);
-        grid = (RecyclerView) findViewById(R.id.grid);
+        codeText = (EditText) findViewById(R.id.code_2);
+        codeText.setText(code);
+/*        grid = (RecyclerView) findViewById(R.id.grid);
         grid.setLayoutManager(new GridLayoutManager(this, 64));
-        grid.setAdapter(new FirebaseRecyclerAdapter<Integer, GridViewHolder>(Integer.class, -1 /*TODO: Use the actual layout*/, GridViewHolder.class, ref.child("grid")) {
+        grid.setAdapter(new FirebaseRecyclerAdapter<Integer, GridViewHolder>(Integer.class, -1 *//*TODO: Use the actual layout*//*, GridViewHolder.class, ref.child("grid")) {
             @Override
             protected void populateViewHolder(GridViewHolder viewHolder, Integer type, int position) {
                 //TODO: Modify layout to reflect the tile type.
             }
-        });
+        });*/
 
         //Force typing uppercase. (From: http://stackoverflow.com/questions/15961813/in-android-edittext-how-to-force-writing-uppercase)
         codeText.setFilters(new InputFilter[] {new InputFilter.AllCaps()});
